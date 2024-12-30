@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Personal Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='style.css'>
+    <script src="https://kit.fontawesome.com/eded597644.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#"><img src="images/logo.jpg" class="logo"></a>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hello there, Myself <span>Shubham</span><br> from Junagadh, Gujarat</h1>
+            </div>
+        </div>
+    </div>
+
+    <!------------about --------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About me</h1><br>
+                    <p> I’m a curious and creative thinker who loves exploring new ideas and solving problems with a mix
+                        of logic and imagination. Always eager to learn and grow, I thrive on turning challenges into
+                        opportunities and bringing unique perspectives to the table. My passion lies in creating
+                        meaningful and impactful solutions that inspire and connect.</p>
+                    <br>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+                        <p class="tab-links" onclick="opentab('education')"> Education </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li> <span>Programming language </span> <br>Python, C </li>
+                            <li> <span> Core subjects </span> <br>DSA , DBMS, OS, CN, OOPS</li>
+                            <li> <span> Web development </span><br> HTML, CSS, Javascript, React</li>
+                            <li> Basic Knowledge in Data science</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li> <span> Primary Education </span> <br>Alpha Primary School, Junagadh Gujarat</li>
+                            <li> <span> High Education </span> <br> Shree N.P. Bhalodiya Highschool, Junagadh Gujarat
+                            </li>
+                            <li> <span> College </span><br> Parul University, Vadodara Gujarat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------Portfolio---------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">
+                My Work
+            </h1>
+
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.webp">
+                    <div class="layer">
+                        <h3> Horror Histories </h3>
+                        <p> "Uncover the darkest corners of history with Horror Histories, a chilling web app that
+                            delves into the most terrifying true stories and legends from around the world.Explore the
+                            sinister side of human history, from infamous serial killers to paranormal events, and
+                            discover the horrors that shaped our world."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------Contact------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Conatct Me</h1>
+                    <p> <i class="fa-regular fa-envelope"></i> shubhamkarwariya245@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> +919979134264</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/5hubham.04/"><i class="fa-brands fa-instagram"></i> </a>
+                        <a href="https://www.linkedin.com/in/shubham-karvariya-6ab142326/"><i class="fa-brands fa-linkedin"></i> </a>
+                    </div>
+                </div>
+                <div class="cantact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright © Shubham. Made For practice with Tutorial <i class="fa-regular fa-heart"></i> </p>
+        </div>
+    </div>
+
+
+</body>
+<script src='script.js'></script>
+
+</html>
